@@ -23,9 +23,22 @@ namespace ViaYou.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/BasicTemplate/css").Include(
+                "~/Content/BasicTemplate/css/bootstrap.min.css",
+                "~/Content/font-awesome.min.css",
+                "~/Content/BasicTemplate/css/prettyPhoto.css",
+                "~/Content/BasicTemplate/css/price-range.css",
+                "~/Content/BasicTemplate/css/animate.css",
+                "~/Content/BasicTemplate/css/animate.css",
+                "~/Content/BasicTemplate/css/main.css",
+                "~/Content/BasicTemplate/css/responsive.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/Scripts/BasicTemplate/js").Include(
+                "~/Scripts/BasicTemplate/js/jquery.scrollUp.min.js",
+                "~/Scripts/BasicTemplate/js/price-range.js",
+                "~/Scripts/BasicTemplate/js/jquery.prettyPhoto.js",
+                "~/Scripts/BasicTemplate/js/main.js"));
         }
     }
 }
