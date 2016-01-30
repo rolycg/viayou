@@ -1,27 +1,13 @@
-﻿<div class="row">
+﻿@using ViaYou.Web.Resources
+<div class="row">
     <div class="col-sm-6 padding-right col-sm-offset-4">
         <div class="features_items">
             <!--features_items-->
             <div class="page-header">
-                <h1 class="text-center"><small>Connections are essential, join the community.</small></h1>
+                <h1 class="text-center"><small>@ResourceLanguage.Label_Index_Message_Header</small></h1>
             </div>
-            <h2 class="title text-center">FIND YOUR CONNECTION</h2>
-            <form class="form-inline" role="form">
-                <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword2">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Remember me
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-default">Sign in</button>
-            </form>
+            <h2 class="title text-center">@ResourceLanguage.Label_Message_Find_Connection</h2>
+            
         </div>
     </div>
 </div>
