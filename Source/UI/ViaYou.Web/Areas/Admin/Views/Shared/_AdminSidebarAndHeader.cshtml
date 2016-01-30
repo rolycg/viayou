@@ -8,6 +8,8 @@
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">ViaYou Dashboard</a>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home", new {area = ""})"> ViaYou <i class="fa fa-arrow-circle-right"></i></a>
+
     </div>
     <!-- /.navbar-header -->
 
@@ -239,10 +241,10 @@
                     <!-- /input-group -->
                 </li>
                 <li>
-                    <a class="active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a class="active" href="@Url.Action("Index","Dashboard")"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                    <a href="@Url.Action("Index", "Users")"><i class="fa fa-users fa-fw"></i> Users</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
