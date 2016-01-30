@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ViaYou.Services.Culture;
 
 namespace ViaYou.Web.Controllers
 {
@@ -29,5 +30,7 @@ namespace ViaYou.Web.Controllers
             Response.Cookies.Add(cookie);
             return Redirect(backUrl);
         }
+
+
     }
 }

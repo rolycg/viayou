@@ -1,6 +1,7 @@
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
+using ViaYou.Services.Culture;
 
 namespace ViaYou.Web
 {
@@ -13,7 +14,7 @@ namespace ViaYou.Web
             // register all your components with the container here
             // it is NOT necessary to register your controllers
             
-            // e.g. container.RegisterType<ITestService, TestService>();
+            container.RegisterType<ICultureService, CultureService>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

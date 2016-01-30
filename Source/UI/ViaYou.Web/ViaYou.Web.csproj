@@ -375,6 +375,20 @@
       <LastGenOutput>ResourceLanguage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\ViaYou.Data\ViaYou.Data.csproj">
+      <Project>{434e3cb1-e254-4ae1-86e7-81a01c88c9e4}</Project>
+      <Name>ViaYou.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\ViaYou.Domain\ViaYou.Domain.csproj">
+      <Project>{57eed5e2-ab86-40dc-9f3d-e9bad3603aaf}</Project>
+      <Name>ViaYou.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\ViaYou.Services\ViaYou.Services.csproj">
+      <Project>{fbd7d9bf-687d-48d6-8bef-fd552ca8a1a3}</Project>
+      <Name>ViaYou.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
