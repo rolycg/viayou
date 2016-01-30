@@ -57,10 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViaYouDataContext.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Migrations\DbContextMigrations\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
