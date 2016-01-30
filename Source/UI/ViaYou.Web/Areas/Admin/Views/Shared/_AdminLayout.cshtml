@@ -8,10 +8,22 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>_AdminLayout</title>
+
+    @Styles.Render("~/Content/Shared/css")
+    @Styles.Render("~/Content/AdminTemplate/css")
+
 </head>
 <body>
-<div>
-    @RenderBody()
-</div>
+    <div id="wrapper">
+        @Html.Partial("_AdminSidebarAndHeader")
+        <div id="page-wrapper">
+            @RenderBody()
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/AdminTemplate/js")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

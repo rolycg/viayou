@@ -14,8 +14,6 @@ namespace ViaYou.Web
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -23,8 +21,11 @@ namespace ViaYou.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new StyleBundle("~/Content/Shared/css").Include(
+                "~/Content/Shared/css/bootstrap.min.css"
+                ));
+
             bundles.Add(new StyleBundle("~/Content/BasicTemplate/css").Include(
-                "~/Content/BasicTemplate/css/bootstrap.min.css",
                 "~/Content/font-awesome.min.css",
                 "~/Content/BasicTemplate/css/prettyPhoto.css",
                 "~/Content/BasicTemplate/css/price-range.css",
@@ -39,6 +40,24 @@ namespace ViaYou.Web
                 "~/Scripts/BasicTemplate/js/price-range.js",
                 "~/Scripts/BasicTemplate/js/jquery.prettyPhoto.js",
                 "~/Scripts/BasicTemplate/js/main.js"));
+
+
+            bundles.Add(new StyleBundle("~/Content/AdminTemplate/css").Include(
+                "~/Content/font-awesome.min.css",
+                "~/Content/AdminTemplate/css/plugins/metisMenu/metisMenu.min.css",
+                "~/Content/AdminTemplate/css/plugins/timeline.css",
+                "~/Content/AdminTemplate/css/sb-admin-2.css",
+                "~/Content/AdminTemplate/css/plugins/morris.css",
+                "~/Content/AdminTemplate/css/main.css",
+                "~/Content/AdminTemplate/css/responsive.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/Scripts/AdminTemplate/js").Include(
+                "~/Scripts/AdminTemplate/js/plugins/metisMenu/metisMenu.min.js",
+                //"~/Scripts/AdminTemplate/js/plugins/morris/raphael.min.js",
+                //"~/Scripts/AdminTemplate/js/plugins/morris/morris.min.js",
+                //"~/Scripts/AdminTemplate/js/plugins/morris/morris-data.js",
+                "~/Scripts/AdminTemplate/js/sb-admin-2.js"));
         }
     }
 }

@@ -182,8 +182,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AdminTemplate\css\sb-admin-2.css" />
     <Content Include="Content\BasicTemplate\css\animate.css" />
-    <Content Include="Content\BasicTemplate\css\bootstrap.min.css" />
     <Content Include="Content\BasicTemplate\css\main.css" />
     <Content Include="Content\BasicTemplate\css\prettyPhoto.css" />
     <Content Include="Content\BasicTemplate\css\price-range.css" />
@@ -248,9 +248,12 @@
     <Content Include="Content\BasicTemplate\images\shop\product9.jpg" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Shared\css\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\AdminTemplate\js\bootstrap.js" />
+    <Content Include="Scripts\AdminTemplate\js\sb-admin-2.js" />
     <Content Include="Scripts\BasicTemplate\js\contact.js" />
     <Content Include="Scripts\BasicTemplate\js\gmaps.js" />
     <Content Include="Scripts\BasicTemplate\js\html5shiv.js" />
@@ -268,6 +271,7 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_AdminSidebarAndHeader.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -321,9 +325,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Content\AdminTemplate\css\" />
+    <Folder Include="Content\AdminTemplate\css\plugins\" />
     <Folder Include="Content\AdminTemplate\images\" />
-    <Folder Include="Scripts\AdminTemplate\js\" />
+    <Folder Include="Content\AdminTemplate\less\" />
+    <Folder Include="Scripts\AdminTemplate\js\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
