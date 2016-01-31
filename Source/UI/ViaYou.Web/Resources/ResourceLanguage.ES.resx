@@ -120,4 +120,10 @@
   <data name="Label_Index_Message_Header" xml:space="preserve">
     <value>Hola</value>
   </data>
+  <data name="Label_Message_Find_Connection" xml:space="preserve">
+    <value>Hola</value>
+  </data>
+  <data name="LanguageSelector" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
 </root>

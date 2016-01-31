@@ -61,11 +61,29 @@ namespace ViaYou.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hello.
+        ///   Looks up a localized string similar to Connections are essential, join the community..
         /// </summary>
         public static string Label_Index_Message_Header {
             get {
                 return ResourceManager.GetString("Label_Index_Message_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FIND YOUR CONNECTION.
+        /// </summary>
+        public static string Label_Message_Find_Connection {
+            get {
+                return ResourceManager.GetString("Label_Message_Find_Connection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string LanguageSelector {
+            get {
+                return ResourceManager.GetString("LanguageSelector", resourceCulture);
             }
         }
     }

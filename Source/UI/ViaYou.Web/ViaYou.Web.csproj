@@ -276,11 +276,16 @@
     <Content Include="Content\BasicTemplate\images\shop\product7.jpg" />
     <Content Include="Content\BasicTemplate\images\shop\product8.jpg" />
     <Content Include="Content\BasicTemplate\images\shop\product9.jpg" />
+    <Content Include="Content\bootstrap-datetimepicker\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\select2\select2.css" />
+    <Content Include="Content\select2\select2.min.css" />
     <Content Include="Content\Shared\css\bootstrap.min.css" />
+    <Content Include="Content\Shared\css\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\AdminTemplate\js\bootstrap.js" />
     <Content Include="Scripts\AdminTemplate\js\sb-admin-2.js" />
@@ -291,6 +296,7 @@
     <Content Include="Scripts\BasicTemplate\js\jquery.scrollUp.min.js" />
     <Content Include="Scripts\BasicTemplate\js\main.js" />
     <Content Include="Scripts\BasicTemplate\js\price-range.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\FontAwesome.otf" />
@@ -303,6 +309,9 @@
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminSidebarAndHeader.cshtml" />
     <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -315,6 +324,10 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\select2\select2.full.js" />
+    <Content Include="Scripts\select2\select2.full.min.js" />
+    <Content Include="Scripts\select2\select2.js" />
+    <Content Include="Scripts\select2\select2.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -360,6 +373,8 @@
     <Folder Include="Content\AdminTemplate\images\" />
     <Folder Include="Content\AdminTemplate\less\" />
     <Folder Include="Scripts\AdminTemplate\js\plugins\" />
+    <Folder Include="Scripts\select2\i18n\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

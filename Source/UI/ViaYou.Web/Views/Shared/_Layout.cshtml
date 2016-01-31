@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViaYou</title>
-    
+
     @Styles.Render("~/Content/Shared/css")
     @Styles.Render("~/Content/BasicTemplate/css")
 
@@ -20,8 +20,10 @@
 <body>
 
     @Html.Partial("_HeaderAndMenu")
-    @RenderBody()
-    @Html.Partial("_Footer")
+    <div class="container">
+        @RenderBody()
+    </div>
+    @*@Html.Partial("_Footer")*@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
