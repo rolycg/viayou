@@ -22,7 +22,8 @@ namespace ViaYou.Web
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/Shared/css").Include(
-                "~/Content/Shared/css/bootstrap.min.css"
+                "~/Content/Shared/css/bootstrap.min.css",
+                "~/Content/Shared/css/site.css"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/BasicTemplate/css").Include(
