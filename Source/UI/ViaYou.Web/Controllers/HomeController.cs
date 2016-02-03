@@ -30,7 +30,23 @@ namespace ViaYou.Web.Controllers
             Response.Cookies.Add(cookie);
             return Redirect(backUrl);
         }
-
+        
+        [AllowAnonymous]
+        public JsonResult RetrieveCities(string searchTerm, int pageSize, int pageNum)
+        {
+            var list = new List<string>
+            {
+                "La habana",
+                "Rio",
+                "Madrid"
+            };
+            var results = list.Where(x=>x.ToLower().Contains(searchTerm)).Select(c => new { id = c, text = c }).ToList();
+            return new JsonResult
+            {
+                Data = new { Total = results.Count(), Results = results },
+                JsonRequestBehavior = JsonRequestBehavior.AllowGet
+            };
+        }
 
     }
 }
