@@ -28,19 +28,18 @@ namespace ViaYou.Web
 
             bundles.Add(new StyleBundle("~/Content/BasicTemplate/css").Include(
                 "~/Content/font-awesome.min.css",
-                "~/Content/BasicTemplate/css/prettyPhoto.css",
-                "~/Content/BasicTemplate/css/price-range.css",
-                "~/Content/BasicTemplate/css/animate.css",
-                "~/Content/BasicTemplate/css/animate.css",
-                "~/Content/BasicTemplate/css/main.css",
-                "~/Content/BasicTemplate/css/responsive.css"
+                "~/Content/BasicTemplate/css/animate.min.css",
+                "~/Content/BasicTemplate/css/creative.css"
                 ));
 
             bundles.Add(new ScriptBundle("~/Scripts/BasicTemplate/js").Include(
-                "~/Scripts/BasicTemplate/js/jquery.scrollUp.min.js",
-                "~/Scripts/BasicTemplate/js/price-range.js",
-                "~/Scripts/BasicTemplate/js/jquery.prettyPhoto.js",
-                "~/Scripts/BasicTemplate/js/main.js"));
+                //"~/Scripts/BasicTemplate/js/jquery.scrollUp.min.js",
+                //"~/Scripts/BasicTemplate/js/price-range.js",
+                //"~/Scripts/BasicTemplate/js/jquery.prettyPhoto.js",
+                //"~/Scripts/BasicTemplate/js/main.js"
+                ));
+
+
 
 
             bundles.Add(new StyleBundle("~/Content/AdminTemplate/css").Include(
