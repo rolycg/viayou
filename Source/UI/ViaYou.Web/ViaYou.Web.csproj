@@ -213,6 +213,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\AdminTemplate\css\sb-admin-2.css" />
+    <Content Include="Content\BasicTemplate\css\animate.min.css" />
+    <Content Include="Content\BasicTemplate\css\creative.css" />
+    <Content Include="Content\BasicTemplate\Images\header.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\1.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\2.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\3.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\4.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\5.jpg" />
+    <Content Include="Content\BasicTemplate\Images\portfolio\6.jpg" />
     <Content Include="Content\bootstrap-datetimepicker\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -222,6 +231,12 @@
     <Content Include="Content\select2\select2.css" />
     <Content Include="Content\select2\select2.png" />
     <Content Include="Content\select2\select2x2.png" />
+    <Content Include="Scripts\BasicTemplate\cbpAnimatedHeader.js" />
+    <Content Include="Scripts\BasicTemplate\classie.js" />
+    <Content Include="Scripts\BasicTemplate\creative.js" />
+    <Content Include="Scripts\BasicTemplate\jquery.easing.min.js" />
+    <Content Include="Scripts\BasicTemplate\jquery.fittext.js" />
+    <Content Include="Scripts\BasicTemplate\wow.min.js" />
     <Content Include="Scripts\bootstrap-datetimepicker\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-datetimepicker\moment.min.js" />
     <Content Include="Scripts\momentjs\moment-timezone.min.js" />
@@ -249,6 +264,9 @@
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\BasicTemplate\less\creative.less" />
+    <Content Include="Content\BasicTemplate\less\mixins.less" />
+    <Content Include="Content\BasicTemplate\less\variables.less" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -308,9 +326,7 @@
     <Folder Include="Content\AdminTemplate\css\plugins\" />
     <Folder Include="Content\AdminTemplate\images\" />
     <Folder Include="Content\AdminTemplate\less\" />
-    <Folder Include="Content\BasicTemplate\" />
     <Folder Include="Scripts\AdminTemplate\js\plugins\" />
-    <Folder Include="Scripts\BasicTemplate\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

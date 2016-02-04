@@ -27,13 +27,9 @@ namespace ViaYou.Web
                 ));
 
             bundles.Add(new StyleBundle("~/Content/BasicTemplate/css").Include(
-                "~/Content/font-awesome.min.css"
-                //"~/Content/BasicTemplate/css/prettyPhoto.css",
-                //"~/Content/BasicTemplate/css/price-range.css",
-                //"~/Content/BasicTemplate/css/animate.css",
-                //"~/Content/BasicTemplate/css/animate.css",
-                //"~/Content/BasicTemplate/css/main.css",
-                //"~/Content/BasicTemplate/css/responsive.css"
+                "~/Content/font-awesome.min.css",
+                "~/Content/BasicTemplate/css/animate.min.css",
+                "~/Content/BasicTemplate/css/creative.css"
                 ));
 
             bundles.Add(new ScriptBundle("~/Scripts/BasicTemplate/js").Include(
