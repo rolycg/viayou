@@ -354,6 +354,10 @@
       <Project>{57eed5e2-ab86-40dc-9f3d-e9bad3603aaf}</Project>
       <Name>ViaYou.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Services\ViaYou.Adapters\ViaYou.Adapters.csproj">
+      <Project>{c0dac922-d5ce-428e-9a13-b1f45138a3ca}</Project>
+      <Name>ViaYou.Adapters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Services\ViaYou.Services\ViaYou.Services.csproj">
       <Project>{fbd7d9bf-687d-48d6-8bef-fd552ca8a1a3}</Project>
       <Name>ViaYou.Services</Name>

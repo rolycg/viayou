@@ -4,16 +4,16 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="~/Content/Images/logo1.png"/>
+            <img src="~/Content/Images/logo1.png" />
             <h2>@ResourceLanguage.Label_Index_Message_Header</h2>
             <hr>
+
             <form class="form-horizontal">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-6">
-                                <p style="font-weight: bold; margin-bottom: 2px">Category:</p>
-
+                                <p style="font-weight: bold; margin-bottom: 2px">CATEGORY</p>
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="optionsCategories" id="optionsRadios1" value="option1" checked>
@@ -29,30 +29,30 @@
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
+                                        Filter3
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
+                                        Filter4
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
+                                        Filter5
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
+                                        Filter6
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <p style="font-weight: bold; margin-bottom: 2px">Contained in:</p>
+                                <p style="font-weight: bold; margin-bottom: 2px">CONTAINED IN:</p>
 
                                 <div class="radio">
                                     <label>
@@ -93,37 +93,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 text-left">
+                    <div class="col-md-6">
                         <p style="font-weight: bold; margin-bottom: 2px">@ResourceLanguage.Label_Message_Find_Connection</p>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>From</label>*@
-                                @Html.TextBox("From", "", new {id = "s2-city-from", @class = "form-control"})
+
+                        <div class="text-left">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @*<label>From</label>*@
+                                    @Html.TextBox("From", "", new { id = "s2-city-from", @class = "form-control" })
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>To</label>*@
-                                @Html.TextBox("To", "", new {id = "s2-city-to", @class = "form-control"})
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @*<label>To</label>*@
+                                    @Html.TextBox("To", "", new { id = "s2-city-to", @class = "form-control" })
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>Date</label>*@
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' class="form-control" placeholder="Date"/>
-                                    <span class="input-group-addon">
-                                        <span class="fa fa-calendar">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @*<label>Date</label>*@
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" placeholder="Date" />
+                                        <span class="input-group-addon">
+                                            <span class="fa fa-calendar">
+                                            </span>
                                         </span>
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-success btn-lg pull-right"> <i class="fa fa-search"></i> SEARCH</a><br/><br/>
+
+                        <a class="btn btn-success btn-lg pull-right"> <i class="fa fa-search"></i> SEARCH</a><br /><br />
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
 </header>
