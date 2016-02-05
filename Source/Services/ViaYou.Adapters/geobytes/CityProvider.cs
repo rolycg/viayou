@@ -11,11 +11,11 @@ using ViaYou.Adapters.geobytes.Models;
 
 namespace ViaYou.Adapters.geobytes
 {
-    public class CitiesProvider : ICitiesProvider
+    public class CityProvider : ICityProvider
     {
         RestClient _client;
 
-        public CitiesProvider()
+        public CityProvider()
         {
             var server = "asdasd"; //ConfigurationManager.AppSettings["cities-provider-server-base-url"];
             _client = new RestClient(server);

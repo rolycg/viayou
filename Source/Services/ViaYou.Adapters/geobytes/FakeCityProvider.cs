@@ -7,7 +7,7 @@ using ViaYou.Adapters.geobytes.Models;
 
 namespace ViaYou.Adapters.geobytes
 {
-    public class FakeCitiesProvider : ICitiesProvider
+    public class FakeCityProvider : ICityProvider
     {
         public IEnumerable<GeobytesCity> GetCities(string term)
         {

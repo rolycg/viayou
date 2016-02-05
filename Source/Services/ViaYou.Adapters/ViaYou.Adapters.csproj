@@ -44,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="geobytes\CitiesProvider.cs" />
-    <Compile Include="geobytes\FakeCitiesProvider.cs" />
-    <Compile Include="geobytes\ICitiesProvider.cs" />
+    <Compile Include="geobytes\CityProvider.cs" />
+    <Compile Include="geobytes\FakeCityProvider.cs" />
+    <Compile Include="geobytes\ICityProvider.cs" />
     <Compile Include="geobytes\Models\GeobytesCity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

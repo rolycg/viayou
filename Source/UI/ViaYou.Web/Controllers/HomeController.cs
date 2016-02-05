@@ -11,11 +11,11 @@ namespace ViaYou.Web.Controllers
 {
     public class HomeController : BaseController
     {
-        private ICitiesProvider _citiesProvider;
+        private readonly ICityProvider _cityProvider;
 
-        public HomeController(ICitiesProvider citiesProvider)
+        public HomeController(ICityProvider cityProvider)
         {
-            _citiesProvider = citiesProvider;
+            _cityProvider = cityProvider;
         }
 
         public ActionResult Index()
@@ -43,7 +43,7 @@ namespace ViaYou.Web.Controllers
         [AllowAnonymous]
         public JsonResult RetrieveCities(string searchTerm, int pageSize, int pageNum)
         {
-            var cities = _citiesProvider.GetCities(searchTerm);
+            var cities = _cityProvider.GetCities(searchTerm);
             var results = cities.Where(x=>x.Name.Contains(searchTerm) || x.Code.ToString().Contains(searchTerm)).Select(c => new { id = c.Code, text = c.Name }).ToList();
             return new JsonResult
             {
@@ -51,6 +51,5 @@ namespace ViaYou.Web.Controllers
                 JsonRequestBehavior = JsonRequestBehavior.AllowGet
             };
         }
-
     }
 }
