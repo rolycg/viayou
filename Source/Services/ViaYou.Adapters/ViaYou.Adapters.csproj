@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="geobytes\CitiesProvider.cs" />
+    <Compile Include="geobytes\FakeCitiesProvider.cs" />
     <Compile Include="geobytes\ICitiesProvider.cs" />
     <Compile Include="geobytes\Models\GeobytesCity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
