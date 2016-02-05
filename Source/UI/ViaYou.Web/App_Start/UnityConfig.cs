@@ -2,6 +2,7 @@ using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
 using ViaYou.Services.Culture;
+using ViaYou.Adapters.geobytes;
 
 namespace ViaYou.Web
 {
@@ -15,6 +16,7 @@ namespace ViaYou.Web
             // it is NOT necessary to register your controllers
             
             container.RegisterType<ICultureService, CultureService>();
+            container.RegisterType<ICitiesProvider, FakeCitiesProvider>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

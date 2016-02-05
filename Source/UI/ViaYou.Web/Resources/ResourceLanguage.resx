@@ -121,9 +121,15 @@
     <value>Connections are essential, join the community.</value>
   </data>
   <data name="Label_Message_Find_Connection" xml:space="preserve">
-    <value>FIND YOUR CONNECTION</value>
+    <value>Find your connection</value>
   </data>
   <data name="LanguageSelector" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="Offer_A_Deliver_Header" xml:space="preserve">
+    <value>Offer a Delivery</value>
+  </data>
+  <data name="Offer_A_Deliver_Text" xml:space="preserve">
+    <value>Manage your lugage and take somebody else's stuff. You decide what to transport.</value>
   </data>
 </root>

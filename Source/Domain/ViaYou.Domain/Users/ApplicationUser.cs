@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using ViaYou.Domain.Chat;
+using ViaYou.Domain.Travels;
+using System.ComponentModel.DataAnnotations;
 
 namespace ViaYou.Domain.Users
 {
@@ -18,5 +21,16 @@ namespace ViaYou.Domain.Users
             // Add custom user claims here
             return userIdentity;
         }
+        [Required]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        public string MiddleName { get; set; }
+
+        public ICollection<Message> Messages { get; set; }
+
+        public ICollection<Travel> Travels{ get; set; }
     }
 }

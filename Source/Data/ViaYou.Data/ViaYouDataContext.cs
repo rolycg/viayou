@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 using ViaYou.Domain.Users;
+using System.Data.Entity;
+using ViaYou.Domain.Travels;
+using ViaYou.Domain.Chat;
 
 namespace ViaYou.Data
 {
@@ -18,5 +21,8 @@ namespace ViaYou.Data
         {
             return new ViaYouDataContext();
         }
+
+        public DbSet<Travel> Travels { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 }

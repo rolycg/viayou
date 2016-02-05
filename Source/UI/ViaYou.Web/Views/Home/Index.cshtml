@@ -1,132 +1,20 @@
 ﻿@using System.Collections.Concurrent
 @using ViaYou.Web.Resources
 
+
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="~/Content/Images/logo1.png"/>
-            <h2>@ResourceLanguage.Label_Index_Message_Header</h2>
+            <h1>@ResourceLanguage.Offer_A_Deliver_Header</h1>
             <hr>
-            <form class="form-horizontal">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p style="font-weight: bold; margin-bottom: 2px">Category:</p>
-
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios1" value="option1" checked>
-                                        Filter1
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsCategories" id="optionsRadios2" value="option2">
-                                        Filter2
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p style="font-weight: bold; margin-bottom: 2px">Contained in:</p>
-
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios3" value="option1" checked>
-                                        Filter3
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios4" value="option2">
-                                        Filter4
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios4" value="option2">
-                                        Filter4
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios4" value="option2">
-                                        Filter4
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios4" value="option2">
-                                        Filter4
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsContained" id="optionsRadios4" value="option2">
-                                        Filter4
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-left">
-                        <p style="font-weight: bold; margin-bottom: 2px">@ResourceLanguage.Label_Message_Find_Connection</p>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>From</label>*@
-                                @Html.TextBox("From", "", new {id = "s2-city-from", @class = "form-control"})
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>To</label>*@
-                                @Html.TextBox("To", "", new {id = "s2-city-to", @class = "form-control"})
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                @*<label>Date</label>*@
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' class="form-control" placeholder="Date"/>
-                                    <span class="input-group-addon">
-                                        <span class="fa fa-calendar">
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-success btn-lg pull-right"> <i class="fa fa-search"></i> SEARCH</a><br/><br/>
-                    </div>
-                </div>
-            </form>
-
+            <p>@ResourceLanguage.Offer_A_Deliver_Text</p>
+            <a href="#searchTravels" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-search"></i> Start Search</a>
         </div>
     </div>
 </header>
+
+
+
 <section id="services">
     <div class="container">
         <div class="row">
@@ -138,24 +26,31 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 text-center">
+            <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-users wow bounceIn text-primary"></i>
                     <h3>Advice for Clients</h3>
                     <p class="text-muted">Our templates are updated regularly so they don't break.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-center">
+            <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Advice for the traveler</h3>
                     <p class="text-muted">You can use this theme as is, or you can make changes!</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-center">
+            <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-question-circle wow bounceIn text-primary" data-wow-delay=".2s"></i>
                     <h3>FAQ</h3>
+                    <p class="text-muted">We update dependencies to keep things fresh.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-suitcase wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>How does it work?</h3>
                     <p class="text-muted">We update dependencies to keep things fresh.</p>
                 </div>
             </div>
@@ -163,6 +58,94 @@
     </div>
 </section>
 
+<section id="searchTravels" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">@ResourceLanguage.Label_Message_Find_Connection</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-content">
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-left">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.TextBox("From", "", new { id = "s2-city-from", @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.TextBox("To", "", new { id = "s2-city-to", @class = "form-control" })
+                                </div>
+                            </div><div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.TextBox("Category", "", new { id = "s2-category", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.TextBox("ContainedIn", "", new { id = "s2-contained", @class = "form-control" })
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-left">
+                            <div class="form-group">
+                                <div class="col-md-6">
+                                    <div class="text-center" id="datetimepicker1"></div>
+                                    @*<div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" placeholder="Date" />
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-calendar">
+                                                </span>
+                                            </span>
+                                        </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-success btn-lg"> <i class="fa fa-search"></i> SEARCH</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <hr class="primary">
+                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                <p>123-456-6789</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:viayou@gmail.com">feedback@viayou.com</a></p>
+            </div>
+
+        </div>
+        <div class="row text-center">
+            <span><i class="fa fa-4x fa-facebook-official"></i></span>
+            <span><i class="fa fa-4x fa-twitter-square"></i></span>
+            <span><i class="fa fa-4x fa-instagram"></i></span>
+        </div>
+    </div>
+</section>
 
 @section specific_styles
 {
@@ -182,12 +165,9 @@
             $('#s2-city-from').select2({
                 placeholder: "From....",
                 ajax: {
-                    //How long the user has to pause their typing before sending the next request
                     quietMillis: 150,
-                    //The url of the json service
                     url: '@Url.Action("RetrieveCities", "Home", new { area = ""})',
                     dataType: 'json',
-                    //Our search term and what page we are on
                     data: function (term, page) {
                         return {
                             pageSize: pageSize,
@@ -196,8 +176,6 @@
                         };
                     },
                     results: function (data, page) {
-                        //Used to determine whether or not there are more results available,
-                        //and if requests for more data should be sent in the infinite scrolling
                         var more = (page * pageSize) < data.Total;
                         return { results: data.Results, more: more };
                     }
@@ -206,12 +184,9 @@
             $('#s2-city-to').select2({
                 placeholder: "To...",
                 ajax: {
-                    //How long the user has to pause their typing before sending the next request
                     quietMillis: 150,
-                    //The url of the json service
                     url: '@Url.Action("RetrieveCities", "Home", new { area = ""})',
                     dataType: 'json',
-                    //Our search term and what page we are on
                     data: function (term, page) {
                         return {
                             pageSize: pageSize,
@@ -220,8 +195,44 @@
                         };
                     },
                     results: function (data, page) {
-                        //Used to determine whether or not there are more results available,
-                        //and if requests for more data should be sent in the infinite scrolling
+                        var more = (page * pageSize) < data.Total;
+                        return { results: data.Results, more: more };
+                    }
+                }
+            });
+            $('#s2-category').select2({
+                placeholder: "Category...",
+                ajax: {
+                    quietMillis: 150,
+                    url: '@Url.Action("RetrieveCategories", "XXXXX", new { area = ""})',
+                    dataType: 'json',
+                    data: function (term, page) {
+                        return {
+                            pageSize: pageSize,
+                            pageNum: page,
+                            searchTerm: term,
+                        };
+                    },
+                    results: function (data, page) {
+                        var more = (page * pageSize) < data.Total;
+                        return { results: data.Results, more: more };
+                    }
+                }
+            });
+            $('#s2-contained').select2({
+                placeholder: "Contained in...",
+                ajax: {
+                    quietMillis: 150,
+                    url: '@Url.Action("RetrieveContainedIn", "XXXXX", new { area = ""})',
+                    dataType: 'json',
+                    data: function (term, page) {
+                        return {
+                            pageSize: pageSize,
+                            pageNum: page,
+                            searchTerm: term,
+                        };
+                    },
+                    results: function (data, page) {
                         var more = (page * pageSize) < data.Total;
                         return { results: data.Results, more: more };
                     }
@@ -234,7 +245,8 @@
                     up: "fa fa-arrow-up",
                     down: "fa fa-arrow-down"
                 },
-                format: 'YYYY MMMM DD'
+                format: 'YYYY MMMM DD',
+                inline: true
             });
         });
     </script>
