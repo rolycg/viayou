@@ -70,7 +70,7 @@ namespace ViaYou.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FIND YOUR CONNECTION.
+        ///   Looks up a localized string similar to Find your connection.
         /// </summary>
         public static string Label_Message_Find_Connection {
             get {
@@ -84,6 +84,24 @@ namespace ViaYou.Web.Resources {
         public static string LanguageSelector {
             get {
                 return ResourceManager.GetString("LanguageSelector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Offer a Delivery.
+        /// </summary>
+        public static string Offer_A_Deliver_Header {
+            get {
+                return ResourceManager.GetString("Offer_A_Deliver_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage your lugage and take somebody else&apos;s stuff. You decide what to transport..
+        /// </summary>
+        public static string Offer_A_Deliver_Text {
+            get {
+                return ResourceManager.GetString("Offer_A_Deliver_Text", resourceCulture);
             }
         }
     }

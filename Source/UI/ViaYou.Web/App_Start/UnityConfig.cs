@@ -16,7 +16,7 @@ namespace ViaYou.Web
             // it is NOT necessary to register your controllers
             
             container.RegisterType<ICultureService, CultureService>();
-            container.RegisterType<ICitiesProvider, CitiesProvider>();
+            container.RegisterType<ICitiesProvider, FakeCitiesProvider>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
