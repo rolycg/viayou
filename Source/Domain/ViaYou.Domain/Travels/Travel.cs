@@ -20,5 +20,9 @@ namespace ViaYou.Domain.Travels
         public int Capacity { get; set; }
         [Required]
         public int Calification { get; set; }
+        [Required]
+        public Category Category { get; set; }
+        [Required]
+        public ContaidedIn ContainedIn { get; set; }
     }
 }

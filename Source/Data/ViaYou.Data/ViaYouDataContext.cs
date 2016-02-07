@@ -24,5 +24,7 @@ namespace ViaYou.Data
 
         public DbSet<Travel> Travels { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ContaidedIn> ContainedIn { get; set; }
     }
 }
