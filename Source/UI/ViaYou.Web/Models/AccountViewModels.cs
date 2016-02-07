@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
+using ViaYou.Web.Resources;
 
 namespace ViaYou.Web.Models
 {
@@ -46,17 +48,47 @@ namespace ViaYou.Web.Models
         public string Email { get; set; }
     }
 
+    public class LoginRegisterViewModel
+    {
+        [Required]
+        [Display(Name = "Email")]
+        [EmailAddress]
+        public string LoginEmail { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string LoginPassword { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        [Remote("CheckUserAviability", "Account", ErrorMessageResourceType = typeof(ResourceLanguage), ErrorMessageResourceName = "The_specified_email_is_currently_in_use")]
+        public string RegisterEmail { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string RegisterPassword { get; set; }
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [System.ComponentModel.DataAnnotations.Compare("RegisterPassword", ErrorMessage = "The password and confirmation password do not match.")]
+        public string RegisterConfirmPassword { get; set; }
+    }
+
     public class LoginViewModel
     {
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
-        public string Email { get; set; }
+        public string LoginEmail { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string Password { get; set; }
+        public string LoginPassword { get; set; }
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
@@ -67,18 +99,18 @@ namespace ViaYou.Web.Models
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
-        public string Email { get; set; }
+        public string RegisterEmail { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string Password { get; set; }
+        public string RegisterPassword { get; set; }
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
+        [System.ComponentModel.DataAnnotations.Compare("RegisterPassword", ErrorMessage = "The password and confirmation password do not match.")]
+        public string RegisterConfirmPassword { get; set; }
     }
 
     public class ResetPasswordViewModel
@@ -96,7 +128,7 @@ namespace ViaYou.Web.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }

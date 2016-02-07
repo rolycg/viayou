@@ -104,5 +104,14 @@ namespace ViaYou.Web.Resources {
                 return ResourceManager.GetString("Offer_A_Deliver_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The specified email is currently in use..
+        /// </summary>
+        public static string The_specified_email_is_currently_in_use {
+            get {
+                return ResourceManager.GetString("The_specified_email_is_currently_in_use", resourceCulture);
+            }
+        }
     }
 }

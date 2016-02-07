@@ -24,7 +24,9 @@
 <body id="page-top">
 
     @Html.Partial("_HeaderAndMenu")
+
     @RenderBody()
+
     @*<div class="btn-group">
             <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
                 @ResourceLanguage.LanguageSelector
@@ -35,11 +37,11 @@
                 <li><a href="@Url.Action("ChangeLanguage", "Home", new { backUrl = Request.Url.AbsoluteUri, culture = "ES" })">Español</a></li>
             </ul>
         </div>*@
-    @*@Html.Partial("_Footer")*@
 
     @Scripts.Render("~/bundles/jquery")
-
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+
 
     @Scripts.Render("~/Scripts/BasicTemplate/js")
     <!-- Plugin JavaScript -->
