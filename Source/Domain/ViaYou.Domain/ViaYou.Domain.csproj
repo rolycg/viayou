@@ -64,7 +64,6 @@
     <Compile Include="Repositories\IContainedInRepository.cs" />
     <Compile Include="Repositories\IMessageRepository.cs" />
     <Compile Include="Repositories\ITravelRepository.cs" />
-    <Compile Include="Services\ITransactionManager.cs" />
     <Compile Include="Travels\Category.cs" />
     <Compile Include="Travels\ContaidedIn.cs" />
     <Compile Include="Travels\Travel.cs" />
@@ -72,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Enums\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
