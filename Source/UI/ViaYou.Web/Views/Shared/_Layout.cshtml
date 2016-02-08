@@ -8,35 +8,22 @@
 
     @Styles.Render("~/Content/Shared/css")
 
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="~/Content/BasicTemplate/css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="~/Content/BasicTemplate/css/creative.css" type="text/css">
 
     @Styles.Render("~/Content/BasicTemplate/css")
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
     @Scripts.Render("~/bundles/modernizr")
 
     @RenderSection("specific_styles", required: false)
 
 </head>
-<body id="page-top">
+<body>
 
     @Html.Partial("_HeaderAndMenu")
 
     @RenderBody()
 
-    @*<div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                @ResourceLanguage.LanguageSelector
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="@Url.Action("ChangeLanguage", "Home", new { backUrl = Request.Url.AbsoluteUri, culture = "EN" })">English</a></li>
-                <li><a href="@Url.Action("ChangeLanguage", "Home", new { backUrl = Request.Url.AbsoluteUri, culture = "ES" })">Español</a></li>
-            </ul>
-        </div>*@
+    @Html.Partial("_Footer")
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -44,13 +31,6 @@
 
 
     @Scripts.Render("~/Scripts/BasicTemplate/js")
-    <!-- Plugin JavaScript -->
-    <script src="~/Scripts/BasicTemplate/jquery.easing.min.js"></script>
-    <script src="~/Scripts/BasicTemplate/jquery.fittext.js"></script>
-    <script src="~/Scripts/BasicTemplate/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="~/Scripts/BasicTemplate/creative.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>
