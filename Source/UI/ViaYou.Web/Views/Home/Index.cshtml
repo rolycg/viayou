@@ -206,7 +206,7 @@
                 placeholder: "Category...",
                 ajax: {
                     quietMillis: 150,
-                    url: '@Url.Action("RetrieveCategories", "XXXXX", new { area = ""})',
+                    url: '@Url.Action("RetrieveCategories", "Category", new { area = "Admin"})',
                     dataType: 'json',
                     data: function (term, page) {
                         return {
@@ -225,7 +225,7 @@
                 placeholder: "Contained in...",
                 ajax: {
                     quietMillis: 150,
-                    url: '@Url.Action("RetrieveContainedIn", "XXXXX", new { area = ""})',
+                    url: '@Url.Action("RetrieveContainedIn", "ContainedIn", new { area = ""})',
                     dataType: 'json',
                     data: function (term, page) {
                         return {
