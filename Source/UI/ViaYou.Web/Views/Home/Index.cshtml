@@ -1,255 +1,69 @@
 ﻿@using System.Collections.Concurrent
 @using ViaYou.Web.Resources
 
-
-<header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>@ResourceLanguage.Offer_A_Deliver_Header</h1>
-            <hr>
-            <p>@ResourceLanguage.Offer_A_Deliver_Text</p>
-            <a href="#searchTravels" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-search"></i> Start Search</a>
-        </div>
+<div id="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <div class="slider-caption">
+                    <h1>@ResourceLanguage.Offer_A_Deliver_Header</h1>
+                    <p>
+                        @ResourceLanguage.Offer_A_Deliver_Text
+                    </p>
+                    <a href="@Url.Action("Index","Travels")"><i class="fa fa-search"></i> Start Search</a>
+                </div>
+                <img src="~/Content/Images/background.jpg" alt="" />
+            </li>
+        </ul>
     </div>
-</header>
+</div>
 
-<section id="services">
+<div id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
-                <hr class="primary">
+            <div class="col-md-12">
+                <div class="heading-section">
+                    <h2 class="section-heading">At Your Service</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-users wow bounceIn text-primary"></i>
-                    <h3>Advice for Clients</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Advice for the traveler</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-question-circle wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>FAQ</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-suitcase wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>How does it work?</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="searchTravels" class="bg-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">@ResourceLanguage.Label_Message_Find_Connection</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="header-content">
-            <form class="form-horizontal">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <br /><br />
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("From", "", new {id = "s2-city-from", @class = "form-control"})
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("To", "", new {id = "s2-city-to", @class = "form-control"})
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("Category", "", new {id = "s2-category", @class = "form-control"})
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("ContainedIn", "", new {id = "s2-contained", @class = "form-control"})
-                                </div>
-                            </div>
-
-                        </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
                     </div>
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <div class="text-center" id="datetimepicker1"></div>
-                                    @*<div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" placeholder="Date" />
-                                            <span class="input-group-addon">
-                                                <span class="fa fa-calendar">
-                                                </span>
-                                            </span>
-                                        </div>*@
-                                </div>
-                            </div>
-                        </div>
+                    <h4>Advice for Clients</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-paper-plane"></i>
                     </div>
+                    <h4>Advice for the traveler</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                 </div>
-                <div class="text-center">
-                    <a class="btn btn-success btn-lg"> <i class="fa fa-search"></i> SEARCH</a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-question-circle"></i>
+                    </div>
+                    <h4>FAQ</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
                 </div>
-            </form>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-hand-paper-o"></i>
+                    </div>
+                    <h4>How does it work?</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-                <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-            </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                <p>123-456-6789</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="mailto:viayou@gmail.com">feedback@viayou.com</a></p>
-            </div>
-
-        </div>
-        <div class="row text-center">
-            <span><i class="fa fa-4x fa-facebook-official"></i></span>
-            <span><i class="fa fa-4x fa-twitter-square"></i></span>
-            <span><i class="fa fa-4x fa-instagram"></i></span>
-        </div>
-    </div>
-</section>
-
-@section specific_styles
-{
-    <link rel="stylesheet" href="~/Content/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css" />
-    <link href="~/Content/select2/select2.css" rel="stylesheet" />
-    <link href="~/Scripts/select2/select2-bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/RegisterLoginModal/login-register.css" rel="stylesheet" />
-}
-@section scripts
-{
-    <script src="~/Scripts/RegisterLoginModel/login-register.js"></script>
-    <script src="~/Scripts/select2/select2.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/bootstrap-datetimepicker/moment.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-
-            var pageSize = 10;
-            $('#s2-city-from').select2({
-                placeholder: "From....",
-                ajax: {
-                    quietMillis: 150,
-                    url: '@Url.Action("RetrieveCities", "Home", new { area = ""})',
-                    dataType: 'json',
-                    data: function (term, page) {
-                        return {
-                            pageSize: pageSize,
-                            pageNum: page,
-                            searchTerm: term,
-                        };
-                    },
-                    results: function (data, page) {
-                        var more = (page * pageSize) < data.Total;
-                        return { results: data.Results, more: more };
-                    }
-                }
-            });
-            $('#s2-city-to').select2({
-                placeholder: "To...",
-                ajax: {
-                    quietMillis: 150,
-                    url: '@Url.Action("RetrieveCities", "Home", new { area = ""})',
-                    dataType: 'json',
-                    data: function (term, page) {
-                        return {
-                            pageSize: pageSize,
-                            pageNum: page,
-                            searchTerm: term,
-                        };
-                    },
-                    results: function (data, page) {
-                        var more = (page * pageSize) < data.Total;
-                        return { results: data.Results, more: more };
-                    }
-                }
-            });
-            $('#s2-category').select2({
-                placeholder: "Category...",
-                ajax: {
-                    quietMillis: 150,
-                    url: '@Url.Action("RetrieveCategories", "Category", new { area = "Admin"})',
-                    dataType: 'json',
-                    data: function (term, page) {
-                        return {
-                            pageSize: pageSize,
-                            pageNum: page,
-                            searchTerm: term,
-                        };
-                    },
-                    results: function (data, page) {
-                        var more = (page * pageSize) < data.Total;
-                        return { results: data.Results, more: more };
-                    }
-                }
-            });
-            $('#s2-contained').select2({
-                placeholder: "Contained in...",
-                ajax: {
-                    quietMillis: 150,
-                    url: '@Url.Action("RetrieveContainedIn", "ContainedIn", new { area = ""})',
-                    dataType: 'json',
-                    data: function (term, page) {
-                        return {
-                            pageSize: pageSize,
-                            pageNum: page,
-                            searchTerm: term,
-                        };
-                    },
-                    results: function (data, page) {
-                        var more = (page * pageSize) < data.Total;
-                        return { results: data.Results, more: more };
-                    }
-                }
-            });
-            $('#datetimepicker1').datetimepicker({
-                icons: {
-                    time: "fa fa-clock-o",
-                    date: "fa fa-calendar",
-                    up: "fa fa-arrow-up",
-                    down: "fa fa-arrow-down"
-                },
-                format: 'YYYY MMMM DD',
-                inline: true
-            });
-        });
-    </script>
-}
+</div>

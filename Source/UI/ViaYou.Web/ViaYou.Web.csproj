@@ -194,6 +194,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TravelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -217,15 +218,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\AdminTemplate\css\sb-admin-2.css" />
-    <Content Include="Content\BasicTemplate\css\animate.min.css" />
-    <Content Include="Content\BasicTemplate\css\creative.css" />
+    <Content Include="Content\BasicTemplate\css\flexslider.css" />
+    <Content Include="Content\BasicTemplate\css\templatemo_misc.css" />
+    <Content Include="Content\BasicTemplate\css\templatemo_style.css" />
+    <Content Include="Content\BasicTemplate\css\testimonails-slider.css" />
     <Content Include="Content\BasicTemplate\Images\header.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\1.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\2.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\3.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\4.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\5.jpg" />
-    <Content Include="Content\BasicTemplate\Images\portfolio\6.jpg" />
+    <Content Include="Content\BasicTemplate\Images\logo.png" />
+    <Content Include="Content\BasicTemplate\Images\search-icon.png" />
     <Content Include="Content\bootstrap-datetimepicker\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -233,6 +232,8 @@
     <Content Include="Content\Images\background.jpg" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\RegisterLoginModal\login-register.css" />
+    <Content Include="Scripts\BasicTemplate\main.js" />
+    <Content Include="Scripts\BasicTemplate\plugins.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\RegisterLoginModel\login-register.js" />
@@ -240,12 +241,6 @@
     <Content Include="Content\select2\select2.css" />
     <Content Include="Content\select2\select2.png" />
     <Content Include="Content\select2\select2x2.png" />
-    <Content Include="Scripts\BasicTemplate\cbpAnimatedHeader.js" />
-    <Content Include="Scripts\BasicTemplate\classie.js" />
-    <Content Include="Scripts\BasicTemplate\creative.js" />
-    <Content Include="Scripts\BasicTemplate\jquery.easing.min.js" />
-    <Content Include="Scripts\BasicTemplate\jquery.fittext.js" />
-    <Content Include="Scripts\BasicTemplate\wow.min.js" />
     <Content Include="Scripts\bootstrap-datetimepicker\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-datetimepicker\moment.min.js" />
     <Content Include="Scripts\momentjs\moment-timezone.min.js" />
@@ -273,9 +268,6 @@
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\Shared\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\BasicTemplate\less\creative.less" />
-    <Content Include="Content\BasicTemplate\less\mixins.less" />
-    <Content Include="Content\BasicTemplate\less\variables.less" />
     <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Category\EditorTemplate\CategoryViewModel.cshtml" />
@@ -331,6 +323,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_HeaderAndMenu.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Travels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
