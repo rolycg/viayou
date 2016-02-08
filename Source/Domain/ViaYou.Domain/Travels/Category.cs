@@ -13,5 +13,20 @@ namespace ViaYou.Domain.Travels
         [Required]
         [MaxLength(40)]
         public string Name { get; set; }
+
+
+        public void Update(string name)
+        {
+            Name = name;
+        }
+
+        public Category()
+        {
+
+        }
+        public Category(string name)
+        {
+            Name = name;
+        }
     }
 }
