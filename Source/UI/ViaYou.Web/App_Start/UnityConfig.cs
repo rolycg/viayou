@@ -10,6 +10,8 @@ using ViaYou.Adapters.geobytes;
 using ViaYou.Data;
 using ViaYou.Domain.Users;
 using ViaYou.Services.Culture;
+using ViaYou.Domain.Repositories;
+using ViaYou.Data.Repositories;
 
 namespace ViaYou.Web
 {
@@ -27,9 +29,17 @@ namespace ViaYou.Web
             container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>();
             container.RegisterType<IAuthenticationManager>(new InjectionFactory(o => HttpContext.Current.GetOwinContext().Authentication));
 
+            //services
             container.RegisterType<ICultureService, CultureService>();
             container.RegisterType<ICityProvider, FakeCityProvider>();
+
+            //repositories
+            container.RegisterType<IContainedInRepository, ContainedInRepository>();
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
+
             
+
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

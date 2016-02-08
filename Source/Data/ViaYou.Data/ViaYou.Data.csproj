@@ -111,6 +111,8 @@
     <Compile Include="IdentityManager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\ContainedInRepository.cs" />
     <Compile Include="ViaYouDataContext.cs" />
   </ItemGroup>
   <ItemGroup>

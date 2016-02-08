@@ -23,6 +23,6 @@ namespace ViaYou.Domain.Travels
         [Required]
         public Category Category { get; set; }
         [Required]
-        public ContaidedIn ContainedIn { get; set; }
+        public ContainedIn ContainedIn { get; set; }
     }
 }

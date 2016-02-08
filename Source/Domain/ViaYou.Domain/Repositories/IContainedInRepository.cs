@@ -9,8 +9,8 @@ namespace ViaYou.Domain.Repositories
 {
     public interface IContainedInRepository
     {
-        void Add(ContaidedIn containedIn);
-        ContaidedIn GetById(int id);
-        IQueryable<ContaidedIn> GetAll();
+        void Add(ContainedIn containedIn);
+        ContainedIn GetById(int id);
+        IQueryable<ContainedIn> GetAll();
     }
 }

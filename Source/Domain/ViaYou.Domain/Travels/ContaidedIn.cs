@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ViaYou.Domain.Travels
 {
-    public class ContaidedIn
+    public class ContainedIn
     {
         public int Id { get; set; }
         [Required]
