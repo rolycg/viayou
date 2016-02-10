@@ -8,7 +8,7 @@ using ViaYou.Domain.Travels;
 
 namespace ViaYou.Data.Repositories
 {
-    public class TravelRepository : ITravelRepository
+    public class TravelRepository : BaseRepository, ITravelRepository
     {
         public void Add(Travel travel)
         {
@@ -17,7 +17,7 @@ namespace ViaYou.Data.Repositories
 
         public IQueryable<Travel> GetAll()
         {
-            throw new NotImplementedException();
+            return Context.Travels;
         }
 
         public Travel GetById(int id)
