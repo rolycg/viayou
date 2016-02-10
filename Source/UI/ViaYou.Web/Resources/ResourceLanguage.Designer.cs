@@ -106,6 +106,15 @@ namespace ViaYou.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SEARCH.
+        /// </summary>
+        public static string Search_Button_Text {
+            get {
+                return ResourceManager.GetString("Search_Button_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The specified email is currently in use..
         /// </summary>
         public static string The_specified_email_is_currently_in_use {

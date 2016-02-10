@@ -132,6 +132,9 @@
   <data name="Offer_A_Deliver_Text" xml:space="preserve">
     <value>Label_Message_Find_Connection</value>
   </data>
+  <data name="Search_Button_Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
   <data name="The_specified_email_is_currently_in_use" xml:space="preserve">
     <value>LanguageSelector</value>
   </data>
