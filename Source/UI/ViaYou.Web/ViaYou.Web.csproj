@@ -231,12 +231,12 @@
     <Content Include="Content\Images\logo1.png" />
     <Content Include="Content\Images\background.jpg" />
     <Content Include="Content\Images\logo.png" />
-    <Content Include="Content\RegisterLoginModal\login-register.css" />
+    <Content Include="Content\Shared\css\login-register.css" />
     <Content Include="Scripts\BasicTemplate\main.js" />
     <Content Include="Scripts\BasicTemplate\plugins.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\RegisterLoginModel\login-register.js" />
+    <Content Include="Scripts\login-register.js" />
     <Content Include="Content\select2\select2-spinner.gif" />
     <Content Include="Content\select2\select2.css" />
     <Content Include="Content\select2\select2.png" />
