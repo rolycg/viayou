@@ -43,7 +43,8 @@
     <Compile Include="Culture\CultureService.cs" />
     <Compile Include="Culture\ICultureService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TravelSearchProvider\ITravelSearch.cs" />
+    <Compile Include="TravelSearchProvider\ITravelSearchService.cs" />
+    <Compile Include="TravelSearchProvider\TravelSearchService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\ViaYou.Domain\ViaYou.Domain.csproj">

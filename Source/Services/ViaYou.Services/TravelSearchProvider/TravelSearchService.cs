@@ -8,11 +8,11 @@ using ViaYou.Domain.Travels;
 
 namespace ViaYou.Services.TravelSearchProvider
 {
-    public class TravelSearch : ITravelSearch
+    public class TravelSearchService : ITravelSearchService
     {
         private readonly ITravelRepository _travelRepository;
 
-        public TravelSearch(ITravelRepository travelRepository)
+        public TravelSearchService(ITravelRepository travelRepository)
         {
             _travelRepository = travelRepository;
         }

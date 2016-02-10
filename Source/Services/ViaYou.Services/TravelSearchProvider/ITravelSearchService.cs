@@ -7,7 +7,7 @@ using ViaYou.Domain.Travels;
 
 namespace ViaYou.Services.TravelSearchProvider
 {
-    public interface ITravelSearch
+    public interface ITravelSearchService
     {
         IEnumerable<Travel> SearchTravels(int orginCityCode, int destinationCityCode, int categoryId, int containedInId);
     }
