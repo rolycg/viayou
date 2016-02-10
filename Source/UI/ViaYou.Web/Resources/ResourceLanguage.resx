@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label_Index_Message_Header" xml:space="preserve">
-    <value>Connections are essential, join the community.</value>
+    <value>Connections are essential, join the community</value>
   </data>
   <data name="Label_Message_Find_Connection" xml:space="preserve">
     <value>Find your connection</value>

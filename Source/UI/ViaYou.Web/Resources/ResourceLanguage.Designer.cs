@@ -61,7 +61,7 @@ namespace ViaYou.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connections are essential, join the community..
+        ///   Looks up a localized string similar to Connections are essential, join the community.
         /// </summary>
         public static string Label_Index_Message_Header {
             get {
