@@ -5,9 +5,11 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Newtonsoft.Json;
 using ViaYou.Domain.Users;
 using ViaYou.Web.Models;
 
@@ -58,19 +60,24 @@ namespace ViaYou.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginViewModel model, string returnUrl)
+        public ActionResult Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
+            var serializer = new JavaScriptSerializer();
             var user = _userManager.FindByEmail(model.LoginEmail);
 
             if (user == null)
             {
                 ModelState.AddModelError("", "Invalid login attempt.");
-                return Json("Invalid login attempt.", JsonRequestBehavior.AllowGet);
+                return Json(new
+                {
+                    success = false,
+                    message = "Invalid login attempt."
+                }, JsonRequestBehavior.AllowGet);
             }
 
             // This doesn't count login failures towards account lockout
@@ -79,15 +86,23 @@ namespace ViaYou.Web.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return Json(new
+                    {
+                        success = true,
+                        message = ""
+                    }, JsonRequestBehavior.AllowGet);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    return RedirectToAction("SendCode", new { RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
-                    return Json("Invalid login attempt.", JsonRequestBehavior.AllowGet);
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Invalid login attempt."
+                    }, JsonRequestBehavior.AllowGet);
             }
         }
 
@@ -476,7 +491,7 @@ namespace ViaYou.Web.Controllers
         public JsonResult CheckUserAviability(string registeremail)
         {
             var user = _userManager.FindByEmail(registeremail);
-            
+
             return Json(user == null, JsonRequestBehavior.AllowGet);
         }
     }
