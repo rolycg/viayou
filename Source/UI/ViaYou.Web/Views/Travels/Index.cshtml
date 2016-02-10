@@ -1,5 +1,6 @@
-﻿@using ViaYou.Web.Resources
-
+﻿@using System.Collections.Concurrent
+@using ViaYou.Web.Resources
+@model ViaYou.Web.Models.SearchTravelViewModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -28,56 +29,70 @@
             </div>
         </div>
         <div class="header-content">
-            <form class="form-horizontal">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <br /><br />
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("From", "", new { id = "s2-city-from", @class = "form-control" })
+            @using (Ajax.BeginForm("SearchTravels", "Travels", null, new AjaxOptions
+            {
+                HttpMethod = "Post",
+                UpdateTargetId = "travelList",
+            },new { id = "searchTravelsForm"}))
+            {
+                <div class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-left">
+                                <br /><br />
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        @Html.TextBoxFor(model => model.From, "", new { id = "s2-city-from", @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.From)
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("To", "", new { id = "s2-city-to", @class = "form-control" })
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        @Html.TextBoxFor(model => model.To, "", new { id = "s2-city-to", @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.To)
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("Category", "", new { id = "s2-category", @class = "form-control" })
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        @Html.TextBoxFor(model => model.CategoryId, "", new { id = "s2-category", @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.CategoryId)
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    @Html.TextBox("ContainedIn", "", new { id = "s2-contained", @class = "form-control" })
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        @Html.TextBoxFor(model => model.ContainedInId, "", new { id = "s2-contained", @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ContainedInId)
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <div class="text-center" id="datetimepicker1"></div>
-                                    @*<div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" placeholder="Date" />
-                                            <span class="input-group-addon">
-                                                <span class="fa fa-calendar">
-                                                </span>
-                                            </span>
-                                        </div>*@
-                                </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="text-left">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <div class="text-center" id="datetimepicker1"></div>
+                                        @*<div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" placeholder="Date" />
+                                <span class="input-group-addon">
+                                    <span class="fa fa-calendar">
+                                    </span>
+                                </span>
+                            </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-success btn-lg" onclick="javascript: $('#searchTravelsForm').submit();"> <i class="fa fa-search"></i> @ResourceLanguage.Search_Button_Text</a>
                     </div>
                 </div>
-                <div class="text-center">
-                    <a class="btn btn-success btn-lg"> <i class="fa fa-search"></i> SEARCH</a>
-                </div>
-            </form>
+            }
+            <div id="travelList">
+                Travels....
+            </div>
         </div>
     </div>
 </section>
