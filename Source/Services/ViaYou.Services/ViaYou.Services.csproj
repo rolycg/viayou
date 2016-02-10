@@ -43,6 +43,13 @@
     <Compile Include="Culture\CultureService.cs" />
     <Compile Include="Culture\ICultureService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TravelSearchProvider\ITravelSearch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\ViaYou.Domain\ViaYou.Domain.csproj">
+      <Project>{57eed5e2-ab86-40dc-9f3d-e9bad3603aaf}</Project>
+      <Name>ViaYou.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
