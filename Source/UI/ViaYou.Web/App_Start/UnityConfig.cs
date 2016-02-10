@@ -12,6 +12,7 @@ using ViaYou.Domain.Users;
 using ViaYou.Services.Culture;
 using ViaYou.Domain.Repositories;
 using ViaYou.Data.Repositories;
+using ViaYou.Services.TravelSearchProvider;
 
 namespace ViaYou.Web
 {
@@ -31,11 +32,13 @@ namespace ViaYou.Web
 
             //services
             container.RegisterType<ICultureService, CultureService>();
+            container.RegisterType<ITravelSearchService, TravelSearchService>();
             container.RegisterType<ICityProvider, FakeCityProvider>();
 
             //repositories
             container.RegisterType<IContainedInRepository, ContainedInRepository>();
             container.RegisterType<ICategoryRepository, CategoryRepository>();
+            container.RegisterType<ITravelRepository, TravelRepository>();
 
             
 
